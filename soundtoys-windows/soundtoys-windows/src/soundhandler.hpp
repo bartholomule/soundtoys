@@ -11,11 +11,12 @@ namespace SoundToys
 		SoundHandler(HWND handle);
 		virtual ~SoundHandler();
 
-		void init();
+		void init(size_t nChannels);
 		void cleanup();
 
 	private:
 		HWND m_hwnd;
-		LPDIRECTSOUND m_ds = nullptr;
+		IDirectSound* m_ds = nullptr;
+		IDirectSoundBuffer* m_primaryBuffer = nullptr;
 	};
 }
