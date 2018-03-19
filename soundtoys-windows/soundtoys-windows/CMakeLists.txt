@@ -1,0 +1,10 @@
+add_executable(
+    soundtoys-windows 
+        "src/main.cpp"
+		"src/window.hpp"
+		"src/window.cpp"
+		"src/soundhandler.hpp"
+		"src/soundhandler.cpp"
+		"src/dsoundwindow.hpp"
+		"src/dsoundwindow.cpp"
+)
